@@ -5,12 +5,12 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/Kenny-House/Go-Sort-Exercise/sorts"
+	"github.com/Kenny-House/Go-Sorting/sorts"
 )
 
-const ELEMENTS int = 10
+const ELEMENTS int = 1000
 const LIMIT int = ELEMENTS * 10
-const TEST_RUNS int = 100
+const TEST_RUNS int = 10
 
 type sorterFunc func([]int) []int
 
@@ -18,15 +18,15 @@ func main() {
 	log.Printf("Elements: %v", ELEMENTS)
 	log.Printf("Test runs per sort function: %v", TEST_RUNS)
 
-	bubble := runTest(sorts.BubbleSort)
-	log.Printf("Bubble Sort: %d", bubble)
+	// bubble := runTest(sorts.BubbleSort)
+	// log.Printf("Bubble Sort: %d", bubble)
 
-	insertion := runTest(sorts.InsertionSort)
-	log.Printf("Insertion Sort: %d", insertion)
+	// insertion := runTest(sorts.InsertionSort)
+	// log.Printf("Insertion Sort: %d", insertion)
 
-	merge := runTest(sorts.MergeSort)
-	log.Printf("Merge Sort: %d", merge)
-
+	// merge := runTest(sorts.MergeSort)
+	// log.Printf("Merge Sort: %d", merge)
+	//
 	heap := runTest(sorts.HeapSort)
 	log.Printf("Heap Sort: %d", heap)
 
